@@ -1,0 +1,30 @@
+.point{
+  width: 100%;
+  padding: 40rpx 5%;
+  box-sizing: border-box;
+}
+.point-input{
+  width: 100%;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border:1rpx solid #999;
+  border-radius: 8rpx;
+}
+.point-submit{
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  z-index: 500;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background: #ED414A;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size:32rpx;
+  margin-top: 40rpx;
+}

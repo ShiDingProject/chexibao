@@ -1,0 +1,22 @@
+<view class="yelist">
+  <view bindtap="add" class='add_notice'>添加公告</view>
+  <view class="content" wx:for="{{seller}}"  wx:key="{{item.value}}">
+    <view class="content_wen gobyndmulit rel">{{ item.content }}</view>
+    <view class="content_picture" wx:if="{{item.img!=''}}">
+      <view wx:for="{{item.img}}" wx:for-item="tpitem" wx:index="idx" wx:key="{{idx}}">
+        <image bindtap="previewImageSeller" data-urls="{{ url }}{{ tpitem }}" data-current="{{ item.img }}" src="{{ url }}{{ tpitem }}" style="border-radius:10rpx;"></image>
+        <view></view>
+      </view>
+    </view>
+    <view class="content_chakan">
+      <view class="content_info time1">{{ item.created_time }} 发布</view>
+      <view bindtap='delSeller' data-id="{{ item.id }}" class='content_del'>删除</view>
+    </view>
+  </view>
+  <view class="nomore">暂无更多信息</view>
+</view>
+
+
+
+
+

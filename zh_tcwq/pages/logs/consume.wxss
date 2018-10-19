@@ -1,0 +1,41 @@
+.consume{
+  padding-top:20rpx;
+}
+.nomore {
+    color: #999;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.consume-list{
+  background: #fff;
+  padding:0rpx 5%;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.consume-list .title{
+  width: 100%;
+  font-size: 26rpx;
+  line-height: 44rpx;
+  box-sizing: border-box;
+  padding:15rpx 200rpx 5rpx 0rpx;
+}
+.consume-list .date{
+  width: 100%;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #666;
+  box-sizing: border-box;
+  padding:5rpx 200rpx 15rpx 0rpx;
+}
+.consume-list .money{
+  position: absolute;
+  right:5%;
+  top:15rpx;
+  font-size: 42rpx;
+  color: #ED414A;
+  line-height: 44rpx;
+}

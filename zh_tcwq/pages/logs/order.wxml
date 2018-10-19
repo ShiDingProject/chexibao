@@ -1,0 +1,25 @@
+<view class="order">
+  <view class='orderList' wx:for="{{orderList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="idx" id="{{ itemName.id }}">
+    <view class='top'>
+      <image class='pic' src='../image/shangcheng.png'></image>
+      <view class='title'>{{ itemName.store_name }}</view>
+      <view wx:if="{{ itemName.state === '已过期' }}" class='status0'>{{ itemName.state }}</view>
+      <view wx:if="{{ itemName.state === '未过期' }}" class='status1'>{{ itemName.state }}</view>
+    </view>
+    <view class='middle'>
+      <image class='pic' src='{{ url }}{{ itemName.store_logo }}'></image>
+      <view class='info'>
+        <view wx:if="{{ itemName.user_name }}" class='title'>{{ itemName.user_name }}</view>
+        <view wx:if="{{ itemName.remark }}" class='remark'>{{ itemName.remark }}</view>
+      </view>
+    </view>
+    <view class='bottom'>
+      <view class='phone'>
+        <image src='../image/yellow_tel.png'></image>
+        {{ itemName.phone }}
+      </view>
+      <view class='date'>预约时间：{{ itemName.subscribe_time }}</view>
+    </view>
+  </view>
+  <view class="nomore">暂无更多信息</view>
+</view>

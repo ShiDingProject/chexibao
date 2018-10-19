@@ -1,0 +1,9 @@
+<!--zh_tcwq/pages/logs/consume.wxml-->
+<view class='consume'>
+  <view wx:for="{{ consumeList }}" wx:index="idx" wx:key="{{idx}}" class='consume-list'>
+    <view class='title'>{{ item.store_name }}</view>
+    <view class='date'>{{ item.time }}</view>
+    <view class='money'>{{ item.money }}￥</view>
+  </view>
+  <view class="nomore">暂无更多信息</view>
+</view>

@@ -1,0 +1,81 @@
+.order {
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 20rpx;
+}
+.nomore {
+    color: #999;
+    font-size: 30rpx;
+    text-align: center;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.orderList{
+  margin-bottom: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 5% 0rpx;
+  background: #fff;
+}
+.orderList .middle{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  padding:20rpx 20rpx 20rpx 160rpx;
+  background: #f6f6f6;
+  min-height: 160rpx;
+  border-radius: 8rpx;
+}
+.orderList .middle .pic{
+  width: 120rpx;
+  height: 120rpx;
+  position: absolute;
+  left: 20rpx;
+  top:20rpx;
+  border-radius: 120rpx;
+}
+.orderList .middle .info{
+  
+}
+.orderList .middle .info .title{
+  font-size: 28rpx;
+  line-height: 44rpx;
+}
+.orderList .middle .info .remark{
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color: #999;
+}
+.orderList .bottom{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 60rpx;
+  overflow: hidden;
+  padding-left: 250rpx;
+}
+.orderList .bottom .phone{
+  position: relative;
+  position: absolute;
+  left: 0rpx;
+  top: 0rpx;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #888;
+  padding-left: 40rpx;
+}
+.orderList .bottom .phone image{
+  display: block;
+  position: absolute;
+  left: 5rpx;
+  top: 16rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+.orderList .bottom .date{
+  width: 100%;
+  text-align: right;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  color: #666;
+}

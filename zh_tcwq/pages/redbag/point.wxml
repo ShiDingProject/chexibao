@@ -1,0 +1,6 @@
+<view class='point'>
+  <view class="section">
+     <input bindinput="getPay_integral" class='point-input' type="number" value='{{ oldPay_integral }}' placeholder='请设置您店铺的[付款积分]...' />
+  </view>
+  <view bindtap='changePoint' class='point-submit'>保存</view>
+</view>

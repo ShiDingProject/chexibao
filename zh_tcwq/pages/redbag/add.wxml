@@ -1,0 +1,25 @@
+<form bindreset="formReset" bindsubmit="formSubmit" reportSubmit="true">
+    <view class="header" style="background:{{System.color}}">
+        <view class="header_title">发布公告</view>
+    </view>
+    <view class="content">
+        <view class="content_miao">内容描述</view>
+        <view class="miaoshu_box">
+            <textarea bindinput="getContent" class="miaoshu" maxlength="540" name="content" placeholder="请输入内容描述"></textarea>
+        </view>
+    </view>
+    <view class="upload">
+        <view class="content_add rel" wx:for="{{imgArray1}}" wx:key="item.this">
+            <view bindtap="delete" class="delete ab" data-inde="{{index}}">
+                <image class="ab" mode="aspectFill" src="../image/delete.png"></image>
+            </view>
+            <image bindtap="previewImageSeller" data-urls="{{ url1 }}{{ item }}" data-current="{{ imgArray1 }}" class="add_img" data-index="{{index}}" src="{{url1}}{{item}}"></image>
+        </view>
+        <view bindtap="imgArray1" class="content_add">
+            <image class="add_img" src="../image/add.png"></image>
+        </view>
+    </view>
+    <button class="confirm" disabled="{{disabled}}" bindtap="addForm" style="background:{{System.color}}">确认发布</button>
+</form>
+
+<view class="zhezhao" wx:if="{{ know==true }}"></view>
